@@ -1,0 +1,228 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.middle-dot {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.circle .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+.circle .number1 {
+  --rotation: 30deg;
+}
+.circle .number2 {
+  --rotation: 60deg;
+}
+.circle .number3 {
+  --rotation: 90deg;
+}
+.circle .number4 {
+  --rotation: 120deg;
+}
+.circle .number5 {
+  --rotation: 150deg;
+}
+.circle .number6 {
+  --rotation: 180deg;
+}
+.circle .number7 {
+  --rotation: 210deg;
+}
+.circle .number8 {
+  --rotation: 240deg;
+}
+.circle .number9 {
+  --rotation: 270deg;
+}
+.circle .number10 {
+  --rotation: 300deg;
+}
+
+.circle .number11 {
+  --rotation: 330deg;
+}
+
+.circle .hand {
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 50%;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.circle .hour {
+  height: 36%;
+  width: 10px;
+  background-color: black;
+}
+
+.circle .minute {
+  height: 48%;
+  width: 6px;
+  background-color: black;
+}
+
+.circle .second {
+  height: 47%;
+  width: 3px;
+  background-color: red;
+}
